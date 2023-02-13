@@ -1,0 +1,18 @@
+AI Skill focuses on three thing 
+
+1. Learning Process 
+2. Reasoning Process 
+3. Self-Correction Process 
+
+types of AI 
+a) purely reactive 
+b) limited memory
+c) theory of mind 
+d) self aware 
+
+
+goals 
+high performance 
+optimized results 
+rational actions 
+

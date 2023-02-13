@@ -1,0 +1,15 @@
+from typing import List
+
+def convert_to_words(s: str) -> List[str]:
+    ans = []
+    temp = ''
+    for i in s:
+        if i != ' ':
+            temp += i
+        else:
+            ans.append(temp)
+            temp = ''
+    return ans
+
+if __name__ == '__main__':
+    print(convert_to_words('i am shubharthak'))
