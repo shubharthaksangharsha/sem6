@@ -1,3 +1,4 @@
+//By Shubharthak, 20BCS6872
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -85,7 +86,7 @@ int main(){
     Node* two = new Node(5);
     Node* next3 = new Node(9);
     Node* next4 = new Node(2);
-    two ->next = next3; 
+    two ->next = next3;
     next3 -> next = next4;
     show(one);
     show(two);
