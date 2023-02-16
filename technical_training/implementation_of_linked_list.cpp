@@ -124,6 +124,10 @@ void SinglyLinkedList::delete_node(int pos){
     delete current;
 }
 void SinglyLinkedList::insert_at_end(int data){
+    if(!head && !tail){
+        insert_at_head(data);
+        return;
+    }
     Node* new_node = new Node(data);
     Node* temp = head;
     while(temp ->next){
@@ -195,20 +199,25 @@ Node* add(Node* one, Node* two){
 
 
 int main(){
-    Node* one = new Node(2);
-    Node* next1 = new Node(1);
-    Node* next2 = new Node(5);
-    one -> next = next1; 
-    next1 -> next = next2; 
-    Node* two = new Node(5);
-    Node* next3 = new Node(9);
-    Node* next4 = new Node(2);
-    two ->next = next3; 
-    next3 -> next = next4;
-    show(one);
-    show(two);
-    Node* ans = add(one, two);
-    show(ans);
+    SinglyLinkedList one; 
+    one.insert_at_end(2);
+    one.
+    one.display();
+    
+    // Node* one = new Node(2);
+    // Node* next1 = new Node(1);
+    // Node* next2 = new Node(5);
+    // one -> next = next1; 
+    // next1 -> next = next2; 
+    // Node* two = new Node(5);
+    // Node* next3 = new Node(9);
+    // Node* next4 = new Node(2);
+    // two ->next = next3; 
+    // next3 -> next = next4;
+    // show(one);
+    // show(two);
+    // Node* ans = add(one, two);
+    // show(ans);
 
 }
 

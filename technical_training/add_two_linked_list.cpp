@@ -60,21 +60,17 @@ Node* add(Node* one, Node* two){
         int sum = 0;
         if (one){
             sum += one->data;
+            one = one->next;
         }
         if (two){
             sum += two->data;
+            two = two->next;
         }
         sum += carry;
         Node* new_node = new Node(sum%10);
         carry = sum / 10;
         temp -> next = new_node;
         temp = temp->next;
-        if (one){
-            one = one->next;
-        }
-        if(two){
-            two = two->next;
-        }
     }
     return reverse(dummy->next);
 }
