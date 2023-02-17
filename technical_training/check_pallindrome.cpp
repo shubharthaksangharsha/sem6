@@ -88,15 +88,21 @@ Node* createList(string s){
 }
 
 int main(){
-    string s;
-    cout << "Enter a string: ";
-    cin >> s;
-    Node* head = createList(s);
-    show(head);
-    bool res = check_pallindrome(head);
-    if (res){
-        cout << "The given list is pallindrome" << endl;
-    } else{
-        cout << "The given list is not pallindrome" << endl;
+    cout << "By Shubharthak, 20BCS6872" << endl;
+    int n;
+    cout << "How many times you want to run test cases: ";
+    cin >> n;
+    while(n--){
+        string s;
+        cout << "Enter a string: ";
+        cin >> s;
+        Node* head = createList(s);
+        bool res = check_pallindrome(head);
+        if (res){
+            cout << "The given list is pallindrome" << endl;
+        } else{
+            cout << "The given list is not pallindrome" << endl;
+        }    
     }
+    cout << "Thank you for using." << endl;
 }
