@@ -18,6 +18,7 @@ void find_and_replace(string &sentence, string find, string replace){
         }
         
     }
+    cout << "Find string at index: " << start << endl;
     sentence.replace(start, find.size(), replace );
     
     // string temp;
