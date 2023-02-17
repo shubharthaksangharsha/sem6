@@ -22,9 +22,10 @@ class Node {
 };
 
 void show(Node* head){
-    while(head){
-        cout << head -> data << "->";
-        head = head -> next;
+    Node* temp = head;
+    while(temp){
+        cout << temp -> data << "->";
+        temp = temp -> next;
     }
     cout << endl;
 }
@@ -65,12 +66,32 @@ bool check_pallindrome(Node* head){
     return true;
 }
 
+
+void populate(Node* &head, Node* &tail, char ch){
+    Node* new_node = new Node(ch);
+    if(!head && !tail){
+        head = new_node;
+        tail = new_node;
+        return;
+    }
+    tail -> next = new_node;
+    tail = tail -> next;
+}
+Node* createList(string s){
+    Node* head = NULL;
+    Node* tail = NULL; 
+    for(int i = 0; i < s.size(); i++){
+        char ch= s[i];
+        populate(head, tail, ch);
+    }
+    return head;
+}
+
 int main(){
-    Node* head = new Node('a');
-    Node *next = new Node('b');
-    Node* next2 = new Node('c');
-    head -> next = next;
-    next -> next = next2;
+    string s;
+    cout << "Enter a string: ";
+    cin >> s;
+    Node* head = createList(s);
     show(head);
     bool res = check_pallindrome(head);
     if (res){
