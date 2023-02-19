@@ -22,9 +22,11 @@ def get_fractional_knapsack(profits: List[int], weights: List[int], capacity: in
             fractions.append(1)
             max_value += profits[i]
             capacity -= weights[i]
+            print(f"Bag {i+1}, Profit: {profits[i]}, Weight: {weights[i]}, Weight Left: {capacity}, Maximum Profit: {max_value}")
         else:
             fractions.append(capacity/ weights[i])
             max_value+= profits[i] * capacity / weights[i]
+            print(f"Bag {i+1}, Profit: {profits[i]}, Weight: {weights[i]}, Weight Left: {capacity}, Maximum Profit: {max_value}")
             break
     return max_value, fractions
 
@@ -38,4 +40,3 @@ if __name__ == '__main__':
     maxvalue, fraction = get_fractional_knapsack(profits, weights, capacity)
     print(f"Maximum Profit: {maxvalue}")
     print(f"Fractions in which items should be taken: {fraction}")
-
