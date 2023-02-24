@@ -2,41 +2,15 @@
 using namespace std; 
 
 void find_and_replace(string &sentence, string find, string replace){
-    int start = 0, end = 0;
-    int counter = 0;
-    for(int i = 0; i < sentence.size(); i++){
-        if(sentence[i] == find[0]){
-            start = i;
-            counter = 1;
-            
+    for(int i = 0; i < sentence.size() - find.size(); i++){
+        if (sentence.substr(i, find.size()) == find){
+            cout << "Starting index: " <<  i << endl;
+            string prev = sentence.substr(0, i); 
+            string next  = sentence.substr(i+find.size(), sentence.size() - prev.size() - find.size()); 
+            string res = prev + replace + next; 
+            sentence = res; 
         }
-        if(counter == 1){
-            if(sentence[i] == find[find.size() - 1]){
-                end = i;
-                break;
-            }
-        }
-        
     }
-    cout << "Find string at index: " << start << endl;
-    sentence.replace(start, find.size(), replace );
-    
-    // string temp;
-    // int start = 0, end = 0;
-    // cout << find[0] << " " << find[find.size() - 1] << endl;
-    // for(int i = 0; i < sentence.size(); i++){
-    //      if (sentence[i] == find[0]){
-    //          start = i;
-    //      }  
-    //      if (sentence[i] == find[find.size() - 1]){
-    //          end = i;
-    //      }
-    //   }
-    //   cout << "start: " << start << endl;
-    //   cout << "end: " << end << endl;
-    //  for(int i = start; i <= end; i++){
-    //      sentence[i] = replace[i]; 
-    //  }
      
 }
 
@@ -53,3 +27,4 @@ int main() {
     cout << sentence << endl;
     return 0;
 }
+

@@ -48,6 +48,23 @@ Node* middle(Node* head){
     }
     return slow;
 }
+bool check_pallindrome2(Node* head){
+    if(!head || !head->next){
+        return true;
+    }
+    vector<char>tempvec; 
+    Node* temp = head; 
+    while(temp){
+        tempvec.push_back(temp->data);
+        temp = temp->next;
+    }
+    for(int start = 0, end = tempvec.size()-1; start <= end; start++, end-- ){
+        if(tempvec[start] != tempvec[end]){
+            return false;
+        }
+    }
+    return true;
+}
 bool check_pallindrome(Node* head){
     //edge cases 
     if(!head || !head->next){
@@ -97,7 +114,7 @@ int main(){
         cout << "Enter a string: ";
         cin >> s;
         Node* head = createList(s);
-        bool res = check_pallindrome(head);
+        bool res = check_pallindrome2(head);
         if (res){
             cout << "The given list is pallindrome" << endl;
         } else{

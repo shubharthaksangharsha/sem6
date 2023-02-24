@@ -52,9 +52,9 @@ if __name__ == '__main__':
     g.addedge(9, 11, 1)
     g.addedge(9, 12, 10)
     g.addedge(9, 13, 2)
-
     source = 0
     target = 9
-    print(f"Source Node: {source}")
+    print(f"Source Node: {source}") 
     print(f"Target Node: {target}")
     g.BFS(source, target)
+    print()
