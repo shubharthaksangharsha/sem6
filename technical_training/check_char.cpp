@@ -114,23 +114,30 @@ int main(){
     cout << "******************************" << endl;
     cout << "Code by Shubharthak, 20BCS6872" << endl;
     int n; 
-    Node* head = NULL;
-    Node* tail = NULL;
-    cout << "Enter the total number of characters you want to insert: ";    
-    cin >> n; 
-    while(n--){
-        char ch; 
-        cout << "Enter the character: "; 
-        cin >> ch; 
-        populate(head, tail, ch);
+   
+    int t; 
+    cout << "Enter how many test case you want to run: ";
+    cin >> t; 
+    while(t--){
+         Node* head = NULL;
+        Node* tail = NULL;
+        cout << "Enter the total number of characters you want to insert: ";    
+        cin >> n; 
+        while(n--){
+            char ch; 
+            cout << "Enter the character: "; 
+            cin >> ch; 
+            populate(head, tail, ch);
+        }
+        // display(head);
+        head = mergeSort(head);
+        // display(head);
+        char search;
+        cout << "Enter the character you want to search: "; 
+        cin >> search;
+        check_char(head, search);   
     }
-    // display(head);
-    head = mergeSort(head);
-    // display(head);
-    char search;
-    cout << "Enter the character you want to search: "; 
-    cin >> search;
-    check_char(head, search);
+
     cout << "******************************" << endl;
     return 0;
 }
