@@ -4,15 +4,6 @@
 */
 #include<bits/stdc++.h>
 using namespace std;
-
-/*
-    Your Trie object will be instantiated and called as such:
-    Trie* obj = new Trie();
-    obj->insert(word);
-    bool check2 = obj->search(word);
-    bool check3 = obj->startsWith(prefix);
- */
-
 class TrieNode{
     public:
         char data; 
@@ -23,7 +14,7 @@ class TrieNode{
             for(int i = 0; i < 26; i++){
                 children[i] = NULL;
             }
-            isTerminal = false;
+            this -> isTerminal = false;
         }
 };
 class Trie {
@@ -66,38 +57,6 @@ private:
 
     }
 
-    bool prefixUtil(TrieNode* root, string word){
-        //base case 
-        if(word.length() == 0){
-            return true;
-        }
-        int index = word[0] - 'a';
-        TrieNode* child;
-        if(root->children[index] != NULL){
-            child = root->children[index];
-        } else{
-            return false;
-        }
-        return prefixUtil(child, word.substr(1));
-    }
-    void removeUtil(TrieNode* root, string word){
-        //base case 
-        if(root == NULL){
-            return;
-        }
-        if(word.length() == 0){
-            root->isTerminal = false;
-            return;
-        }
-        int index = word[0] - 'a';
-        TrieNode* child; 
-        if (root->children[index] != NULL){
-            child = root->children[index];
-        } else{
-            child = NULL;
-        }
-        removeUtil(child, word.substr(1));
-    }
 public:
     /** Initialize your data structure here. */
     Trie() {
@@ -112,15 +71,6 @@ public:
     bool search(string word) {
         return searchUtil(root, word);
     }   
-
-    /** Returns if there is any word in the trie that starts with the given prefix. */
-    bool startsWith(string prefix) {
-        return prefixUtil(root, prefix);
-    }
-    //Delete Word in the Trie
-    void removeWord(string word){
-        removeUtil(root, word);
-    }
 };
 
 int main(){

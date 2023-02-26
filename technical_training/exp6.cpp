@@ -45,7 +45,7 @@ int main(){
         cout << "Enter the Course Name: ";
         cin >> v2[i].second;
     }
-    cout << " Enter the total roll number present in list 3: ";
+    cout << "Enter the total roll number present in list 3: ";
     cin >> n3; 
     vector<pair<int, string>>v3(n3);
     for(int i = 0; i< v3.size(); i++){
@@ -54,19 +54,22 @@ int main(){
         cout << "Enter the CGPA: ";
         cin >> v3[i].second;
     }
+    sort(v1.begin(), v1.end());
+    sort(v2.begin(), v2.end());
+    sort(v3.begin(), v3.end());
     cout << "List1: ";
     for(auto const i : v1){
-            cout << i.first << ", " << i.second << endl;
+            cout << "[" << i.first << ", " << i.second << "], ";
         }
     cout << endl;
     cout << "List2: ";
     for(auto const i : v2){
-            cout << i.first << ", " << i.second << endl;
+            cout << "[" << i.first << ", " << i.second << "], ";
         }
     cout << endl;
     cout << "List3: ";
     for(auto const i : v3){
-            cout << i.first << ", " << i.second << endl;
+            cout << "[" << i.first << ", " << i.second << "], ";
         }
     cout << endl;
     n1 = v1.size(), n2 = v2.size(), n3 = v3.size();
@@ -91,9 +94,13 @@ int main(){
             }
         }
     }
-
-    for(int i = 0; i < ans.size(); i++){
-        cout << ans[i] << " ";
+    cout << "Common Roll Numbers: ";
+    if(ans.size() == 0){
+        cout << "No Roll Numbers are common" << endl;
+    } else {
+        for(int i = 0; i < ans.size(); i++){
+            cout << ans[i] << " ";
+        }
     }
     cout << endl;
     return 0;

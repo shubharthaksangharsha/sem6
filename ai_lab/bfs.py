@@ -1,62 +1,48 @@
-# By Shubharthak
-from collections import defaultdict, deque
 import heapq
 
+# Define the heuristic function to estimate the cost of reaching the goal
+def heuristic(node, goal):
+    # Here, we use the Euclidean distance as the heuristic function
+    return ((node[0] - goal[0]) ** 2 + (node[1] - goal[1]) ** 2) ** 0.5
 
-class Graph:
-    # Constructor
-    def __init__(self) -> None:
-        self.graph = defaultdict(list)
+# Define the Best-First Search function
+def best_first_search(graph, start, goal):
+    # Create a priority queue to store the nodes to be expanded
+    queue = [(heuristic(start, goal), start)]
+    visited = set()
+    # Iterate until the queue is empty
+    while queue:
+        # Get the node with the lowest heuristic value from the queue
+        (cost, current_node) = heapq.heappop(queue)
+        # Check if we have reached the goal
+        if current_node == goal:
+            return True
+        # Add the current node to the visited set
+        visited.add(current_node)
+        # Expand the neighbors of the current node
+        for neighbor in graph[current_node]:
+            # Check if the neighbor has already been visited
+            if neighbor not in visited:
+                # Calculate the heuristic value for the neighbor
+                neighbor_cost = heuristic(neighbor, goal)
+                # Add the neighbor to the queue with its heuristic value as priority
+                heapq.heappush(queue, (neighbor_cost, neighbor))
+    # If the goal is not reachable from the start node, return False
+    return False
 
-    def addedge(self, u: int, v: int, cost: int) -> None:
-        self.graph[u].append((v, cost))
-        self.graph[v].append((u, cost))
+# Example usage
+graph = {
+    (0, 0): [(0, 1), (1, 0)],
+    (0, 1): [(0, 0), (1, 1)],
+    (1, 0): [(0, 0), (1, 1)],
+    (1, 1): [(0, 1), (1, 0), (2, 2)],
+    (2, 2): []
+}
 
-    def BFS(self, start_node: int, target: int, heuristic) -> None:
-        '''
-        Search the target node from the source node
-        Args:
-             start_node: Source node from where the search will start: int
-             target: Destination node: int
-             heuristic: Dict() contains all heuristic values
-        Returns:
-            None
-        '''
-        print("Path: ", end="")
-        queue = []
-        heapq.heapify(queue)
-        heapq.heappush(queue, (heuristic[start_node], start_node))
-        visited = set([start_node])
-        while queue:
-            node = heapq.heappop(queue)[1]
-            print(node, end=" ")
-            if node == target:
-                break
-            for child_node, cost in self.graph[node]:
-                if child_node in visited: continue
-                visited.add(child_node)
-                heapq.heappush(queue, (heuristic[child_node], child_node))
+start = (0, 0)
+goal = (2, 2)
 
-
-if __name__ == '__main__':
-    g = Graph()
-    g.addedge(0, 1, 3)
-    g.addedge(0, 2, 6)
-    g.addedge(0, 3, 5)
-    g.addedge(1, 4, 9)
-    g.addedge(1, 5, 8)
-    g.addedge(2, 6, 12)
-    g.addedge(2, 7, 14)
-    g.addedge(3, 8, 7)
-    g.addedge(8, 9, 5)
-    g.addedge(8, 10, 6)
-    g.addedge(9, 11, 1)
-    g.addedge(9, 12, 10)
-    g.addedge(9, 13, 2)
-    heuristic = {0:13,1: 12, 2: 1, 3: 7, 4: 3,5:8,6:2,7:4,8:9,9:0 } 
-    source = 0
-    target = 9
-    print(f"Source Node: {source}")
-    print(f"Target Node: {target}")
-    g.BFS(source, target, heuristic)
-    print()
+if best_first_search(graph, start, goal):
+    print("Goal reached!")
+else:
+    print("Goal not reachable!")
