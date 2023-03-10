@@ -51,3 +51,26 @@ Using these definitions, we can apply a search algorithm to find the optimal pat
 avoiding obstacles and reaching the goal location as quickly and efficiently as possible.
 The search algorithm will explore the state space by considering all possible actions and their resulting states,
 and will use the costs to guide its search towards the most efficient path.
+
+let's consider the 8-puzzle problem. In this problem, there is a 3x3 grid with eight tiles numbered from 1 to 8, and one blank tile.
+The goal of the problem is to rearrange the tiles to form a specific goal state.
+
+Here's an example of how we can define the problem space for the 8-puzzle problem using the components I mentioned earlier:
+
+S: The set of all possible configurations of the puzzle board, which includes the locations of each numbered tile and the location of the blank tile.
+
+A: The set of all possible actions that can be taken from a given state, which include moving a tile into the blank space (up, down, left, or right).
+
+Action: An action might be moving tile number 3 into the blank space.
+
+Result: The result of taking an action from a given state is the new configuration of the puzzle board.
+
+Cost: The cost of taking an action is typically 1, as all actions are assumed to have equal cost.
+
+Using these definitions, we can apply a search algorithm like A* search to find the optimal path to the goal state, 
+which is typically defined as the configuration where the tiles are arranged in ascending order from left to right, top to bottom,
+with the blank tile in the bottom-right corner.
+
+The search algorithm will explore the state space by considering all possible actions and their resulting states, 
+and will use heuristics like the Manhattan distance or the number of misplaced tiles to guide its search towards the goal state.
+By exploring the state space in this way, the algorithm can find the most efficient or optimal path to the goal state.
