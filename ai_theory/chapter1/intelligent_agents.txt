@@ -1,0 +1,15 @@
+An intelligent agent is a software program or entity that perceives its environment and takes actions to achieve its goals. It is an important concept in Artificial Intelligence (AI) because it provides a way to model and understand the behavior of autonomous systems that interact with their environment.
+
+Intelligent agents are characterized by four main components:
+
+    Perception: This is the ability of the agent to sense and interpret the environment in which it operates. Perception involves collecting data through sensors and analyzing the data to identify relevant features of the environment.
+
+    Reasoning: This is the ability of the agent to make decisions based on the data collected through perception. Reasoning involves processing the data to infer the state of the environment and the consequences of different actions.
+
+    Action: This is the ability of the agent to perform actions in the environment to achieve its goals. Actions can be physical, such as moving a robot arm, or virtual, such as sending a message.
+
+    Learning: This is the ability of the agent to adapt its behavior based on experience. Learning allows the agent to improve its performance over time by adjusting its perception, reasoning, and action components.
+
+Intelligent agents can be classified based on their level of autonomy, from reactive agents that only react to their environment, to proactive agents that can plan ahead and take initiative. They can also be classified based on their degree of cooperation, from individual agents that act independently, to multi-agent systems that interact and cooperate with each other to achieve shared goals.
+
+Overall, intelligent agents are a powerful concept in AI that enables the development of autonomous systems that can perceive, reason, act, and learn in complex environments.

@@ -1,0 +1,15 @@
+Searching is a problem-solving technique used to find a solution to a particular problem by exploring a search space. A search space is a set of possible solutions or states that can be reached by applying a set of actions or operators to an initial state.
+
+In this chapter, you will learn about various searching techniques, including:
+
+    Problem-solving techniques: This involves defining a problem and searching for a solution in a predefined search space. The techniques used for problem-solving include state space search, control strategies, and blind search.
+
+    State space search: This involves exploring all possible states in a search space to find a solution. The techniques used for state space search include depth-first search, breadth-first search, and iterative deepening.
+
+    Control strategies: This involves selecting a particular path or state to explore based on a specific criterion. The techniques used for control strategies include hill climbing and best-first search.
+
+    Blind search: This involves searching a problem space without any heuristic or domain-specific knowledge. The techniques used for blind search include depth-first search, breadth-first search, and uniform cost search.
+
+In addition to these techniques, you will also learn about some common search algorithms used in AI, such as A* search, which is an informed search algorithm that uses a heuristic function to guide the search towards the goal state.
+
+Overall, this chapter provides a solid foundation for understanding the fundamental concepts and techniques of searching in AI. These techniques are essential for solving complex problems and designing intelligent systems that can make informed decisions based on available information.

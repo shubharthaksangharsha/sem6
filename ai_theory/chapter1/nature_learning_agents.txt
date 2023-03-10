@@ -1,0 +1,27 @@
+Nature of Agents:
+
+An agent is an autonomous system that interacts with its environment to achieve its goals. The nature of an agent refers to the properties that define its behavior, such as its sensing and actuation capabilities, decision-making strategies, and learning abilities.
+
+Agents can be classified based on their nature as follows:
+
+    Reactive agents: These agents react to changes in their environment without any internal state representation. They have no memory of past events and no ability to plan ahead.
+
+    Model-based agents: These agents maintain an internal state representation of the environment and use this representation to make decisions. They can plan ahead and anticipate the consequences of their actions.
+
+    Goal-based agents: These agents have a set of goals that they want to achieve and use their internal state representation to plan actions that will help them achieve their goals.
+
+    Utility-based agents: These agents take into account the preferences of their user or designer when making decisions. They assign a utility value to each action and choose the action with the highest utility.
+
+Learning Agents:
+
+A learning agent is an agent that can improve its behavior based on experience. Learning agents use machine learning algorithms to automatically learn from data and adjust their behavior over time.
+
+Learning agents can be classified based on the type of feedback they receive from their environment as follows:
+
+    Supervised learning agents: These agents learn from labeled training data, where the correct output for each input is provided.
+
+    Unsupervised learning agents: These agents learn from unlabeled data, where no correct output is provided. They learn to identify patterns and structure in the data.
+
+    Reinforcement learning agents: These agents learn by trial and error, receiving feedback in the form of rewards or punishments based on their actions. They learn to maximize the total reward over time.
+
+Overall, understanding the nature of agents and learning agents is crucial for designing and developing effective AI systems that can adapt and improve over time.

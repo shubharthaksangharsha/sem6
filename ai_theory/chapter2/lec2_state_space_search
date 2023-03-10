@@ -1,0 +1,76 @@
+State Space Search is a problem-solving approach used in artificial intelligence to find a solution to a problem by exploring all possible states of the problem space. 
+The problem space is usually defined as a set of states, each of which is connected to one or more other states by transitions or actions.
+
+The State Space Search algorithm starts from the initial state of the problem and
+proceeds to search through the state space, considering all possible paths that lead to the goal state.
+The algorithm uses a set of rules or heuristics to determine which paths to explore first and which to ignore, in order to find the shortest or
+most efficient path to the goal state.
+
+The State Space Search algorithm is commonly used in many AI applications, 
+such as planning, scheduling, game playing, and optimization. It is a fundamental concept in AI and has many variations, 
+including breadth-first search, depth-first search, A* search, and others.
+
+
+In State Space Search, S, A, Action, Result, and Cost represent the key components of a problem formulation:
+
+S: The set of all possible states in the problem space. This is the set of all configurations that the system can be in at any given time. 
+For example, in a chess game, the set of all possible states would be all possible board configurations.
+
+A: The set of all possible actions that can be taken from a given state. These actions represent the possible transitions from one state to another
+. For example, in a chess game, the set of all possible actions would be all possible moves that can be made from a given board configuration.
+
+Action: An action is a specific choice from the set of possible actions that can be taken from a given state.
+For example, in a chess game, an action might be a move from one square to another.
+
+Result: The result of taking a specific action from a given state. This is the new state that is reached after the action is taken.
+For example, in a chess game, the result of a move might be a new board configuration.
+
+Cost: The cost of taking a specific action from a given state.
+This represents the amount of resources, time, or effort required to perform the action. For example, in a chess game,
+the cost of a move might be the number of pieces that are captured or the number of moves required to reach a desired configuration.
+
+These components are used to define the problem space, which is then explored by a search algorithm to find a solution to the problem.
+By defining the problem space in terms of S, A, Action, Result, and Cost, it becomes possible to apply a wide range of search algorithms
+to find the most efficient or optimal solution to the problem.
+
+let's take the example of a robot trying to navigate through a maze. We can define the problem space as follows:
+
+S: The set of all possible configurations of the robot in the maze, which includes its location, orientation, and any obstacles in its path.
+
+A: The set of all possible actions that the robot can take at any given time, which include moving forward, turning left or right, or stopping.
+
+Action: An action might be to move forward one step, turn left or right, or stop.
+
+Result: The result of taking an action from a given state is the new configuration of the robot in the maze. 
+For example, if the robot moves forward one step, its new configuration will be its new location and orientation.
+
+Cost: The cost of taking an action is the amount of time or energy required to perform the action. 
+For example, moving forward one step might have a cost of 1, while turning left or right might have a cost of 0.5.
+
+Using these definitions, we can apply a search algorithm to find the optimal path for the robot to navigate through the maze,
+avoiding obstacles and reaching the goal location as quickly and efficiently as possible.
+The search algorithm will explore the state space by considering all possible actions and their resulting states,
+and will use the costs to guide its search towards the most efficient path.
+
+let's consider the 8-puzzle problem. In this problem, there is a 3x3 grid with eight tiles numbered from 1 to 8, and one blank tile.
+The goal of the problem is to rearrange the tiles to form a specific goal state.
+
+Here's an example of how we can define the problem space for the 8-puzzle problem using the components I mentioned earlier:
+
+S: The set of all possible configurations of the puzzle board, which includes the locations of each numbered tile and the location of the blank tile.
+
+A: The set of all possible actions that can be taken from a given state, which include moving a tile into the blank space (up, down, left, or right).
+
+Action: An action might be moving tile number 3 into the blank space.
+
+Result: The result of taking an action from a given state is the new configuration of the puzzle board.
+
+Cost: The cost of taking an action is typically 1, as all actions are assumed to have equal cost.
+
+Using these definitions, we can apply a search algorithm like A* search to find the optimal path to the goal state, 
+which is typically defined as the configuration where the tiles are arranged in ascending order from left to right, top to bottom,
+with the blank tile in the bottom-right corner.
+
+The search algorithm will explore the state space by considering all possible actions and their resulting states, 
+and will use heuristics like the Manhattan distance or the number of misplaced tiles to guide its search towards the goal state.
+By exploring the state space in this way, the algorithm can find the most efficient or optimal path to the goal state.

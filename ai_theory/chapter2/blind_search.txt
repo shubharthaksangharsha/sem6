@@ -1,0 +1,13 @@
+In AI, blind search is a search technique that explores a problem space without any heuristic or domain-specific knowledge. Blind search is also known as uninformed search because it does not use any information about the problem or the goal state to guide the search.
+
+Blind search algorithms typically use a set of predefined rules to explore the problem space, such as moving from the current state to a neighboring state and continuing the search until the goal state is found. Blind search algorithms may explore a large number of states or nodes before finding a solution, and they may not guarantee that the optimal solution will be found.
+
+There are several types of blind search algorithms, including:
+
+    Depth-first search: This algorithm explores the problem space by visiting the deepest level of a search tree first and then backtracking if a dead-end is reached. Depth-first search can be implemented using a recursive algorithm.
+
+    Breadth-first search: This algorithm explores the problem space by visiting all the nodes at a particular level of a search tree before moving on to the next level. Breadth-first search can be implemented using a queue data structure.
+
+    Uniform-cost search: This algorithm explores the problem space by selecting the state with the lowest cost as the next state to explore. Uniform-cost search can be implemented using a priority queue data structure.
+
+Blind search is useful in situations where the problem space is small or the cost of exploring all possible paths is low. However, in large or complex problem spaces, blind search may not be efficient and may require a significant amount of time and computational resources to find a solution. In such cases, heuristic-based search algorithms such as informed search may be more appropriate.
