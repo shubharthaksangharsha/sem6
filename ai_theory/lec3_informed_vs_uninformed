@@ -1,0 +1,41 @@
+Uninformed search and informed search are two broad categories of search algorithms used in artificial intelligence to solve problems.
+
+Uninformed search, also known as blind search, is a category of search algorithms that operate without any knowledge of the problem domain.
+These algorithms rely solely on the structure of the search tree and do not use any heuristics or domain-specific information to guide their search.
+Examples of uninformed search algorithms include Breadth-First Search, Depth-First Search, and Uniform-Cost Search.
+
+In contrast, informed search, also known as heuristic search, is a category of search algorithms that use domain-specific knowledge or
+heuristics to guide their search. These algorithms use an evaluation function that estimates the cost or value of a given state or action,
+based on some domain-specific knowledge or heuristic. Examples of informed search algorithms include A* search, Best-First Search, and Greedy Search.
+
+The primary difference between these two categories of search algorithms is that informed search algorithms
+use domain-specific knowledge to guide their search, while uninformed search algorithms do not. Informed search algorithms are often more efficient
+than uninformed search algorithms, as they can use heuristics to guide their search towards more promising parts of the search space.
+However, they also require more domain-specific knowledge and may not be applicable to all types of problems.
+
+
+
+
+some additional differences between uninformed and informed search:
+
+Completeness: Uninformed search algorithms like Breadth-First Search and Depth-First Search are guaranteed to find a solution if one exists. 
+In contrast, some informed search algorithms like Greedy Search are not guaranteed to find a solution.
+
+Optimality: Uninformed search algorithms do not necessarily find the optimal solution to a problem. For example, Depth-First Search may find a solution
+quickly but may not be optimal. Informed search algorithms like A* search are designed to find the optimal solution if one exists.
+
+Memory usage: Uninformed search algorithms like Depth-First Search can be memory-efficient because they only need to store the path to the current node
+in the search tree. In contrast, informed search algorithms like A* search need to store additional information like the heuristic values for each node,
+which can require more memory.
+
+Time complexity: Informed search algorithms can often find a solution more quickly than uninformed search algorithms, especially for large 
+or complex search spaces. However, the time complexity of informed search algorithms depends on the quality of the heuristic function used.
+
+Domain-specific knowledge: Informed search algorithms require domain-specific knowledge to guide their search,
+whereas uninformed search algorithms do not. This means that informed search algorithms may be more effective in some domains, 
+but may not be applicable to all types of problems.
+
+Overall, the choice between uninformed and informed search algorithms depends on the specific problem domain
+and the available domain-specific knowledge. Uninformed search algorithms may be sufficient for simple problems or
+problems where domain-specific knowledge is not available, while informed search algorithms may be more effective for 
+complex problems with known domain-specific information.
