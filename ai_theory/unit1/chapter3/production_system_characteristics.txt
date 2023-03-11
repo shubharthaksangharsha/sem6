@@ -1,0 +1,38 @@
+A production system is a type of artificial intelligence system that is used to model a specific problem-solving approach. It consists of a set of rules, called productions, that govern how the system operates. Each production contains a condition and an action. If the condition is true, the action is executed, which can result in changes to the system's state.
+
+There are several characteristics that define production systems:
+
+Goal-oriented: Production systems are designed to achieve a specific goal or objective. The productions are created with the aim of moving the system closer to the desired goal.
+
+Reactive: Production systems are reactive in nature, meaning that they respond to changes in the environment. The productions are triggered by changes in the system's inputs or state.
+
+Knowledge-based: Production systems are based on a specific knowledge domain. The productions are created using knowledge about the problem domain, which is used to guide the system's actions.
+
+Procedural: Production systems are procedural in nature, meaning that they follow a specific sequence of steps. The productions are executed in a specific order to achieve the desired outcome.
+
+Modular: Production systems are modular in design, meaning that they can be broken down into smaller components. This makes them easier to maintain and modify.
+
+Incremental: Production systems are incremental in nature, meaning that they build up their knowledge over time. As new information is learned, the system updates its productions and adapts to new situations.
+
+Overall, the characteristics of production systems make them well-suited for solving complex problems in a variety of domains. By using a set of rules to guide the system's behavior, production systems can be designed to achieve specific goals and respond to changes in the environment.
+
+
+
+
+here's an example to illustrate how production systems work:
+
+Let's say you are developing a production system to diagnose and treat medical conditions. The system would be designed to take in patient information, such as symptoms and medical history, and use this information to diagnose the condition and recommend a treatment plan.
+
+The productions in the system would be rules that govern how the system operates. For example, one production could be:
+
+IF patient has fever AND patient has cough AND patient has headache
+THEN diagnose patient with flu AND recommend treatment plan A
+
+In this example, the condition of the production is that the patient has a fever, cough, and headache. If these conditions are met, the action of the production is to diagnose the patient with the flu and recommend treatment plan A.
+
+As the system receives more information about the patient, it would use a set of productions to update its diagnosis and treatment plan. For example, if the patient's symptoms change or new information is discovered about their medical history, the system would use its productions to update the diagnosis and treatment plan accordingly.
+
+Overall, the production system would be designed to use knowledge about medical conditions and treatments to make accurate diagnoses and recommend effective treatment plans. The productions would be created based on this knowledge, and the system would use them to guide its behavior and make decisions about patient care.
+
+
+

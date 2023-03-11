@@ -1,0 +1,57 @@
+A* Search is a variant of Best-First Search that combines the advantages of both Breadth-First Search and Best-First Search. It uses an evaluation function that combines the cost-so-far from the initial state to the current state (known as g-value) and the estimated cost from the current state to the goal state (known as h-value).
+
+The A* algorithm expands nodes with the lowest f-value, which is the sum of g and h values. This means that A* Search explores the most promising paths first, similar to Best-First Search, but it also takes into account the cost-so-far, which helps to avoid exploring unnecessary paths, similar to Breadth-First Search.
+
+A* Search has several advantages over other search algorithms. First, it is guaranteed to find the optimal solution if the heuristic function is admissible, which means that it never overestimates the true cost to the goal. Second, it is efficient in terms of both time and space complexity, especially when the search space is large and complex.
+
+A* Search has several variants, such as IDA* (Iterative Deepening A*), which combines A* with iterative deepening, and SMA* (Simplified Memory-Bounded A*), which limits the amount of memory used by the algorithm.
+
+Here is an example of how A* Search works:
+
+Suppose we want to find the shortest path from the start node S to the goal node G in the following graph:
+   S --(3)-- A --(2)-- B --(5)-- G
+   |           |           |
+  (1)        (2)         (1)
+   |           |           |
+   C --(4)-- D --(3)-- E --(6)-- F
+
+The heuristic function h(n) for each node n is the Euclidean distance from n to G. For example, h(S) = 7, h(A) = 5, h(B) = 5, h(C) = 10, h(D) = 8, h(E) = 5, and h(F) = 0.
+
+The A* Search algorithm starts by adding the start node S to the open list, with f(S) = g(S) + h(S) = 0 + 7 = 7. Then, it selects the node with the lowest f-value, which is S, and expands it. The algorithm generates three successor nodes of S: A, C, and D. The f-values for these nodes are:
+
+f(A) = g(S) + 3 + h(A) = 0 + 3 + 5 = 8
+f(C) = g(S) + 1 + h(C) = 0 + 1 + 10 = 11
+f(D) = g(S) + 4 + h(D) = 0 + 4 + 8 = 12
+
+The algorithm adds A to the open list and discards C and D. Then, it selects A, with f(A) = 8, and expands it. The algorithm generates two successor nodes of A: B and D. The f-values for these nodes are:
+
+f(B) = g(A) + 2 + h(B) = 3 + 2 + 5 = 10
+f(D) = g(A) + 3 + h(D) = 3 + 3 + 8 = 14
+
+The algorithm adds B to the open list and discards D. Then, it selects B, with f(B) = 10, and expands it. The algorithm generates one successor node of B: G. The f-value for G is:
+The f-value for G depends on the heuristic function and the cost of moving from B to G. Assuming the cost of moving from B to G is 5, and the heuristic function estimates that the cost of reaching the goal from G is 8, then the f-value for G would be 10 + 5 + 8 = 23. The algorithm would add G to the open list with a total estimated cost of 23.
+
+
+A* search is admissible if the heuristic function used in the algorithm never overestimates the actual cost to reach the goal state from the current state. This means that the estimated cost given by the heuristic function should always be less than or equal to the actual cost. If the heuristic function is admissible, the A* algorithm is guaranteed to find the optimal solution to the problem.
+
+
+Advantages:
+
+A* search is complete, meaning that if a solution exists, A* search will find it.
+A* search is optimal if the heuristic function is admissible, meaning that it never overestimates the actual cost of reaching the goal.
+A* search can be more efficient than other uninformed search algorithms like breadth-first search or depth-first search, especially in large search spaces with a well-designed heuristic function.
+Disadvantages:
+
+A* search can be computationally expensive if the search space is large and the heuristic function is not well-designed.
+A* search can run into problems with infinite loops if there are cycles in the search space.
+A* search requires storing all the nodes that have been generated but not yet expanded, which can be memory-intensive in large search spaces.
+
+
+
+The time complexity of A* search depends on several factors, including the size of the search space, the quality of the heuristic function, and the branching factor of the search tree.
+
+In the worst case, A* search may need to expand all nodes in the search space, leading to a time complexity that is exponential in the depth of the solution. However, in practice, the use of an admissible heuristic function can greatly reduce the time complexity of A* search.
+
+The time complexity of A* search can be expressed as O(b^d), where b is the branching factor of the search tree, and d is the depth of the solution. However, the actual time complexity can be much lower if the heuristic function is well-designed and the search space has a lot of structure.
+
+Overall, A* search is a very efficient search algorithm when used with a well-designed heuristic function. It is often used in real-world applications such as pathfinding in video games, robotics, and logistics.

@@ -1,0 +1,13 @@
+AO* search, also known as Adaptive A* search, is an extension of A* search that adjusts the heuristic function during the search to improve its accuracy.
+
+The main idea behind AO* search is to start with a relatively simple heuristic function that may underestimate the cost of the optimal solution, and gradually improve the heuristic function as more information about the search space is obtained. This process is called heuristic learning.
+
+During the search, AO* maintains a set of subgoals, which are intermediate goals that are known to be achievable and can help guide the search towards the optimal solution. The heuristic function is updated based on the actual cost of reaching these subgoals.
+
+The advantage of AO* search over A* search is that it can handle problems with complex or dynamic environments where the optimal solution may change over time. However, AO* search may have a higher time complexity than A* search due to the additional overhead of heuristic learning and updating.
+
+The time complexity of AO* search can be expressed as O(b^d * h), where b is the branching factor of the search tree, d is the depth of the solution, and h is the number of heuristic updates. In practice, the number of heuristic updates is typically small compared to the size of the search space, so the time complexity is often similar to that of A* search.
+
+
+
+
