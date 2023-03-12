@@ -1,30 +1,50 @@
 AI skills can be broadly categorized into three main areas:
 
-Learning Process: This involves the ability of AI systems to learn from data and improve their performance over time. Machine learning algorithms are used to analyze data and identify patterns that can be used to make predictions or automate tasks.
+Learning Process: This involves the ability of AI systems to learn from data and improve their performance over time.
+Machine learning algorithms are used to analyze data and identify patterns that can be used to make predictions or automate tasks.
 
-Reasoning Process: This involves the ability of AI systems to use logic and reasoning to solve problems and make decisions. This can include using rule-based systems, expert systems, and other forms of decision-making algorithms.
+Reasoning Process: This involves the ability of AI systems to use logic and reasoning to solve problems and make decisions.
+This can include using rule-based systems, expert systems, and other forms of decision-making algorithms.
 
-Self-Correction Process: This involves the ability of AI systems to self-correct and adapt to changing environments. This can include using feedback loops to monitor and adjust performance, or using reinforcement learning to improve decision-making based on rewards and penalties.
+Self-Correction Process: This involves the ability of AI systems to self-correct and adapt to changing environments.
+This can include using feedback loops to monitor and adjust performance, or using reinforcement learning to improve 
+decision-making based on rewards and penalties.
 
-By focusing on these three areas, AI systems can become more intelligent and effective in a variety of applications, from autonomous vehicles to chatbots to medical diagnosis.
+By focusing on these three areas, AI systems can become more intelligent and effective in a variety of applications,
+from autonomous vehicles to chatbots to medical diagnosis.
 
 
 Types of AI 
-a) Purely reactive AI: This type of AI is designed to react only to the current situation without any understanding of past or future states. It is programmed to make decisions based on a set of pre-defined rules, but it has no ability to learn or adapt from its experiences.
+a) Purely reactive AI: This type of AI is designed to react only to the current situation without any
+understanding of past or future states. It is programmed to make decisions based on a set of pre-defined rules,
+but it has no ability to learn or adapt from its experiences.
 
-b) Limited memory AI: This type of AI is designed to remember and learn from past experiences to make better decisions in the future. It is programmed to analyze and store data from past events and use that information to make informed decisions.
+b) Limited memory AI: This type of AI is designed to remember and learn from past experiences to make better
+decisions in the future. It is programmed to analyze and store data from past events and use that information to 
+make informed decisions.
 
-c) Theory of mind AI: This type of AI is designed to understand and interpret the beliefs, intentions, and emotions of other entities to predict their behavior. It is programmed to have a model of the world that includes the mental states of other entities, such as humans or animals.
+c) Theory of mind AI: This type of AI is designed to understand and interpret the beliefs, intentions, and emotions
+of other entities to predict their behavior. It is programmed to have a model of the world that includes the mental
+states of other entities, such as humans or animals.
 
-d) Self-aware AI: This type of AI is designed to have consciousness and subjective experience. It is programmed to be aware of its own existence and able to reflect on its own thoughts and emotions. However, this type of AI is currently only theoretical and has not yet been achieved in practice.
+d) Self-aware AI: This type of AI is designed to have consciousness and subjective experience. It is programmed to 
+be aware of its own existence and able to reflect on its own thoughts and emotions. However, this type of AI is 
+currently only theoretical and has not yet been achieved in practice.
 
 
 The goals of AI can vary depending on the specific application and use case. However, some common goals of AI include:
 
-a) High performance: AI is often designed to perform tasks faster, more accurately, and with greater efficiency than humans or traditional computing systems. This includes tasks such as image recognition, natural language processing, and decision making.
+a) High performance: AI is often designed to perform tasks faster, more accurately, and with greater efficiency than
+humans or traditional computing systems. This includes tasks such as image recognition, natural language processing,
+and decision making.
 
-b) Optimized results: AI can be programmed to optimize certain outcomes, such as maximizing profits or minimizing errors. This involves using data analysis and machine learning algorithms to identify patterns and make predictions about future outcomes.
+b) Optimized results: AI can be programmed to optimize certain outcomes, such as maximizing profits or minimizing
+errors. This involves using data analysis and machine learning algorithms to identify patterns and make predictions
+about future outcomes.
 
-c) Rational actions: AI can be designed to make decisions based on logical reasoning and objective analysis, rather than emotions or biases. This can be especially useful in applications such as healthcare, finance, and transportation, where decisions need to be made quickly and accurately.
+c) Rational actions: AI can be designed to make decisions based on logical reasoning and objective analysis,
+rather than emotions or biases. This can be especially useful in applications such as healthcare, finance, and 
+transportation, where decisions need to be made quickly and accurately.
 
-Overall, the goals of AI are to create systems that can perform tasks autonomously, with high accuracy and efficiency, while also making rational decisions based on data and objective analysis.
+Overall, the goals of AI are to create systems that can perform tasks autonomously, with high accuracy and efficiency,
+while also making rational decisions based on data and objective analysis.
