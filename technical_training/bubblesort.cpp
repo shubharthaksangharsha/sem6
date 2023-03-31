@@ -1,9 +1,19 @@
 #include <iostream>
 using namespace std;
 
-struct Node {
-    int data;
-    Node* next;
+class Node {
+    public:
+        int data;
+        Node* next;
+        Node(){
+            this -> data = 0; 
+            this -> next = NULL; 
+        }
+        
+        Node(int data){
+            this -> data = data ; 
+            this -> next = NULL; 
+        }
 };
 
 void bubbleSort(Node* start) {
@@ -23,7 +33,7 @@ void bubbleSort(Node* start) {
     }
 }
 
-void printList(Node* node) {
+void display(Node* node) {
     while (node != nullptr) {
         cout << node->data << " ";
         node = node->next;
@@ -31,37 +41,36 @@ void printList(Node* node) {
     cout << endl;
 }
 
+void populate(Node* &head, Node* &tail, int data){
+    Node* new_node = new Node(data);
+    if (!head && !tail ){
+        head = new_node;
+        tail = new_node;
+        return;
+    }
+    tail -> next = new_node; 
+    tail = tail -> next; 
+    
+}
 int main() {
-    Node* head = nullptr;
-    Node* second = nullptr;
-    Node* third = nullptr;
-    Node* fourth = nullptr;
-
-    // allocate 4 nodes in the heap
-    head = new Node;
-    second = new Node;
-    third = new Node;
-    fourth = new Node;
-
-    // Assign data values
-    head->data = 10;
-    second->data = 20;
-    third->data = 5;
-    fourth->data = 15;
-
-    // Connect nodes
-    head->next = second;
-    second->next = third;
-    third->next = fourth;
-    fourth->next = nullptr;
-
-    cout << "Original list:\n";
-    printList(head);
+    cout << "Bubble Sort by Shubharthak, 20BCS6872" << endl; 
+    cout << "Please enter how many nodes are present in your linked list: ";
+    int n; 
+    cin >> n;
+    Node* head = NULL; 
+    Node* tail = NULL; 
+    while(n--){
+        cout << "Enter the data: "; 
+        int n; 
+        cin >> n; 
+        populate(head, tail, n);
+    }
+    display(head);
 
     bubbleSort(head);
 
     cout << "Sorted list:\n";
-    printList(head);
+    display(head);
 
     return 0;
 }
