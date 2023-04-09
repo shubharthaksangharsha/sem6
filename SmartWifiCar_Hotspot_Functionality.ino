@@ -125,7 +125,6 @@ void loop() {
   Blynk.run();// Run the blynk function
   smartcar();// Call the main function
 }
-
 /**************Motor movement functions*****************/
 void carBackward() {
   analogWrite(ENA, Speed);
