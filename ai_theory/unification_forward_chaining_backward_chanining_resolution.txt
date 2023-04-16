@@ -1,0 +1,42 @@
+
+Unification:
+Unification is the process of finding a substitution that makes two expressions identical. In other words, given two terms, unification finds a way to replace variables in one term with constants or other variables in the other term so that the two terms become equal. For example, the terms "cat" and "cat" unify trivially, while the terms "cat" and "dog" do not unify. The unification algorithm is used in many areas of artificial intelligence, including natural language processing and automated theorem proving.
+
+Here's an example of how unification works:
+
+Given the two terms "loves(x,y)" and "loves(John,Mary)", we can unify these terms by substituting "John" for "x" and "Mary" for "y", resulting in "loves(John,Mary)". This means that the statement "John loves Mary" can be inferred from the premise "loves(x,y)" if we can unify "x" with "John" and "y" with "Mary".
+
+Forward chaining:
+Forward chaining is a reasoning method that starts with a set of premises and repeatedly applies inference rules to generate new conclusions. It is called "forward" chaining because it starts from the premises and works forward to generate new conclusions. This method is often used in expert systems and rule-based systems.
+
+Here's an example of how forward chaining works:
+
+Suppose we have the following rules in our knowledge base:
+
+If it is sunny and warm, then people go to the beach.
+If people go to the beach, then they wear sunscreen.
+It is sunny and warm today.
+Using forward chaining, we can start with the premise that it is sunny and warm today, and apply the first rule to infer that people go to the beach. Then, we can apply the second rule to infer that people wear sunscreen. Therefore, we can conclude that people wear sunscreen today.
+
+Backward chaining:
+Backward chaining is a reasoning method that starts with a goal and works backward through a set of inference rules to determine if the goal can be inferred from the available knowledge. It is called "backward" chaining because it starts from the goal and works backward through the inference rules to the premises. This method is often used in expert systems and rule-based systems.
+
+Here's an example of how backward chaining works:
+
+Suppose we have the following rules in our knowledge base:
+
+If it is sunny and warm, then people go to the beach.
+If people go to the beach, then they wear sunscreen.
+People wear sunscreen today.
+Using backward chaining, we can start with the goal of determining whether people wear sunscreen today, and apply the second rule to infer that people go to the beach. Then, we can apply the first rule to infer that it is sunny and warm. Therefore, we can conclude that people wear sunscreen today.
+
+Resolution:
+Resolution is a technique used in automated theorem proving to determine if a logical statement is valid. It works by creating a contradiction from two logical statements and inferring that the original statement must be true. The resolution algorithm uses a set of inference rules to generate new statements from existing ones, and applies these rules repeatedly until a contradiction is found.
+
+Here's an example of how resolution works:
+
+Suppose we want to prove the statement "All men are mortal" using the following premises:
+
+Socrates is a man.
+If someone is a man, then they are mortal.
+To use resolution, we negate the statement we want to prove and combine it with the premises using the inference rule of resolution. The negation of "All men are mortal

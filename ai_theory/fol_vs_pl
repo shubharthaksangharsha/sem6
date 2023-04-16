@@ -1,0 +1,48 @@
+5 key differences between propositional logic (PL) and first-order logic (FOL), along with examples:
+
+Expressive Power: FOL is more expressive than PL because it can represent complex relationships between objects and their properties, while PL can only represent simple propositions.
+Example:
+
+Propositional logic: "It is raining" (represented by the propositional variable p)
+First-order logic: "All birds can fly" (represented by the predicate "fly" and the quantifier "all")
+Variables: FOL uses variables to represent objects in a domain, while PL does not use variables.
+Example:
+
+Propositional logic: "The sky is blue" (represented by the propositional variable p)
+First-order logic: "x is a blue object" (represented by the variable x and the predicate "blue")
+Predicates: FOL uses predicates to represent properties of objects and relations between them, while PL only uses propositional symbols to represent propositions.
+Example:
+
+Propositional logic: "The cat is on the mat" (represented by the propositional variable p)
+First-order logic: "The cat is on the mat" (represented by the predicate "on" and the constants "cat" and "mat")
+Quantifiers: FOL uses quantifiers to make statements about all or some objects in a domain, while PL does not use quantifiers.
+Example:
+
+Propositional logic: "The door is open" (represented by the propositional variable p)
+First-order logic: "All doors are made of wood" (represented by the predicate "made_of" and the quantifier "all")
+Inference: FOL allows for more sophisticated forms of inference than PL, such as modus ponens, modus tollens, and resolution, while PL only allows for simpler forms of inference such as modus ponens.
+Example:
+
+Propositional logic:
+"If it is raining, then the streets are wet." (represented by the propositional variables p and q)
+"It is raining." (represented by the propositional variable p)
+Therefore, "The streets are wet." (inferred using modus ponens)
+First-order logic:
+"All birds can fly." (represented by the predicate "fly" and the quantifier "all")
+"Penguins are birds." (represented by the constant "penguin" and the predicate "bird")
+Therefore, "Penguins can fly." (inferred using universal instantiation and modus ponens)
+
+Propositional logic (PL) and first-order logic (FOL) are both formal systems used to represent and reason about knowledge. However, there are some key differences between the two.
+
+Propositional logic deals with propositions or statements that are either true or false. Propositions are represented using propositional symbols (also known as propositional variables) and logical connectives like AND, OR, and NOT. Propositional logic does not deal with individual objects or relationships between them. Instead, it focuses on the truth values of propositions and how they are related to one another.
+
+First-order logic, on the other hand, deals with individual objects and their properties, and the relationships between them. In FOL, we use predicates to represent properties of objects and relations between them. FOL also includes quantifiers that allow us to make statements about all or some objects in a domain.
+
+To illustrate the difference between the two, consider the following example:
+
+PL: "If it is raining, then the streets are wet."
+FOL: "∀x (rain(x) → wet(street(x)))"
+
+In PL, we are only concerned with the truth value of the statement "if it is raining, then the streets are wet". In FOL, we use predicates to represent the properties of objects in our domain. In this case, we use the predicate "rain(x)" to represent the property of being rainy, and "wet(street(x))" to represent the property of being wet. We also use the universal quantifier to say that for all x in our domain, if x has the property of being rainy, then the street x has the property of being wet.
+
+In summary, the main difference between PL and FOL is that PL deals with propositions and their truth values, while FOL deals with objects and their properties and relationships.

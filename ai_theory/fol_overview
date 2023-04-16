@@ -1,0 +1,11 @@
+First order logic (FOL) is a way of representing knowledge in a formal, symbolic manner. It extends propositional logic by allowing us to express relationships between objects and properties of those objects. In FOL, we have:
+
+Constants: Represent specific objects (e.g., Alice, Bob).
+Variables: Represent any object in the domain (e.g., x, y).
+Predicates: Describe properties or relationships between objects (e.g., isTall(x), loves(x, y)).
+Quantifiers: Allow us to express statements about all or some objects (e.g., ∀ (for all), ∃ (there exists)).
+Example: ∀x (isHuman(x) → hasHeart(x))
+
+This statement says that for every object x, if x is a human, then x has a heart.
+
+

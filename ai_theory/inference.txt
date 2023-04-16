@@ -1,0 +1,12 @@
+Inference in FOL is the process of making logical conclusions based on a set of rules and facts. It involves using logical reasoning to determine if a statement can be logically derived from a set of given statements or premises.
+
+For example, let's say we have the following statements:
+
+All dogs are animals.
+All animals have a heart.
+Fido is a dog.
+We can use these statements to infer that Fido has a heart, since he is an animal and all animals have a heart. We can also infer that all dogs have a heart, since they are animals and all animals have a heart.
+
+To make these inferences, we use certain rules of inference, such as universal instantiation and modus ponens. Universal instantiation allows us to substitute a specific object for a variable that is universally quantified in a premise. For example, we can substitute "Fido" for the variable "x" in the premise "All dogs are animals" to get the statement "Fido is an animal". Modus ponens allows us to infer a conclusion from a conditional statement and its antecedent. For example, we can use the premise "All animals have a heart" and the conditional statement "If something is an animal, then it has a heart" to infer that Fido has a heart.
+
+Inference in FOL can become much more complex when dealing with larger sets of rules and facts, and may require the use of other rules of inference, such as existential instantiation and universal generalization. However, the basic idea is that we use logical reasoning to draw conclusions from given statements or premises.

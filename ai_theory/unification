@@ -1,0 +1,22 @@
+Unification is an algorithmic process in first-order logic that finds a substitution for variables that makes two expressions identical. In other words, unification is a way to find a common ground between two expressions by replacing variables with terms so that the two expressions can be unified into one. The unification algorithm is used in many applications of first-order logic, including automated theorem proving, natural language processing, and logic programming.
+
+The unification algorithm takes two expressions as input and returns either a unifier, which is a substitution that makes the two expressions identical, or fails if no such substitution exists. A substitution is a set of variable/term pairs that specifies how to replace each variable in an expression with a term. A unifier is a most general unifier (MGU) if it is more general than any other unifier. That is, if there is another unifier, then the most general unifier is a more general substitution than the other unifier.
+
+Let's look at an example to illustrate how unification works:
+
+Suppose we want to unify the following two expressions:
+
+f(a, x, b)
+f(y, g(z), z)
+To unify these expressions, we start by comparing the first terms, which are both f. Since they are the same, we move on to the next terms, which are a and y. We can unify these terms by assigning y to a:
+
+{y/a}
+Next, we move on to the third terms, which are b and z. We can unify these terms by assigning z to b:
+
+{y/a, z/b}
+Finally, we move on to the second terms, which are x and g(z). We can unify these terms by assigning g(z) to x:
+
+{y/a, z/b, x/g(z)}
+We have found a unifier that makes the two expressions identical, and this unifier is the most general unifier because it is more general than any other unifier.
+
+Note that unification is an important process in first-order logic because it enables us to use inference rules like resolution, which requires that we unify two expressions before we can apply the rule. Additionally, unification is used in many other applications of first-order logic, such as automated reasoning, natural language processing, and logic programming.

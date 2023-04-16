@@ -1,0 +1,21 @@
+Modus ponens: If P implies Q and P is true, then Q is true. Example: If it rains, then the ground gets wet. It is raining. Therefore, the ground is wet.
+
+Modus tollens: If P implies Q and Q is not true, then P is not true. Example: If it rains, then the ground gets wet. The ground is not wet. Therefore, it is not raining.
+
+Hypothetical syllogism: If P implies Q and Q implies R, then P implies R. Example: If it rains, then the ground gets wet. If the ground gets wet, then the grass grows. Therefore, if it rains, then the grass grows.
+
+Disjunctive syllogism: If P or Q is true, and P is not true, then Q must be true. Example: Either it will rain or it will be sunny today. It will not rain. Therefore, it will be sunny.
+
+Simplification: If P and Q are both true, then P is true and Q is true. Example: It is raining and the ground is wet. Therefore, it is raining and the ground is wet.
+
+Conjunction: If P is true and Q is true, then P and Q are both true. Example: It is raining. The ground is wet. Therefore, it is raining and the ground is wet.
+
+Addition: If P is true, then P or Q is true. Example: It is raining. Therefore, it is either raining or sunny.
+
+Universal instantiation: If a statement is true for all objects in a domain, then it is true for any specific object in that domain. Example: All men are mortal. Socrates is a man. Therefore, Socrates is mortal.
+
+Universal generalization: If a statement is true for a specific object in a domain, then it is true for all objects in that domain. Example: Socrates is mortal. Therefore, all men are mortal.
+
+Existential instantiation: If there exists an object in a domain that satisfies a statement, then we can name that object. Example: There is a man who is tall. Therefore, we can name a man who is tall.
+
+Existential generalization: If we can name an object in a domain that satisfies a statement, then there exists an object in that domain that satisfies the statement. Example: John is tall. Therefore, there exists a man who is tall.

@@ -1,0 +1,29 @@
+Resolution is a complete and sound inference rule for first-order logic. It is based on the idea of refutation: to prove that a sentence is true, we show that its negation leads to a contradiction. The resolution rule allows us to infer new clauses from a set of clauses by resolving two clauses that share complementary literals. In other words, we use resolution to eliminate redundant information from a set of clauses.
+
+The steps involved in resolution are:
+
+Convert the sentences in the knowledge base to clausal form.
+Negate the sentence to be proved and add it to the knowledge base as a clause.
+Apply resolution repeatedly until either a contradiction is found or no further inferences can be made.
+Let's look at an example to illustrate how resolution works:
+
+Suppose we have the following set of clauses in the knowledge base:
+
+P(x) ∨ Q(x)
+¬Q(x) ∨ R(x)
+¬R(x)
+We want to prove the sentence ¬P(x). To do so, we negate the sentence and add it to the knowledge base as a clause:
+
+P(x)
+Now, we can apply resolution to clauses 1 and 4, which share the literal P(x):
+
+Q(x)
+Then, we can apply resolution to clauses 2 and 5, which share the literal ¬Q(x):
+
+R(x)
+Finally, we can apply resolution to clauses 3 and 6, which share the literal ¬R(x):
+
+⊥ (contradiction)
+Since we have derived a contradiction, we can conclude that our original assumption, ¬P(x), must be true.
+
+Note that resolution is a sound and complete inference rule for first-order logic. This means that if a sentence can be inferred from a set of axioms using resolution, then it is true in all possible models of the axioms. Similarly, if a sentence is true in all possible models of the axioms, then it can be inferred from the axioms using resolution.

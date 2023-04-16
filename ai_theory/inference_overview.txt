@@ -1,0 +1,24 @@
+Inference in First Order Logic
+
+Inference is the process of deriving new conclusions from existing knowledge. There are several inference methods in FOL:
+
+Propositional vs. First Order Inference: Propositional logic deals with simple statements (e.g., A, B, ¬A), while FOL deals with relationships and quantifiers. FOL inference is more expressive and powerful but also more complex.
+
+Unification: A process that finds the substitution of variables in two expressions that makes them identical (e.g., unifying loves(x, y) with loves(Alice, Bob) results in {x/Alice, y/Bob}).
+
+Forward Chaining: A reasoning method that starts with known facts and applies rules to derive new conclusions. This is a data-driven approach.
+
+Example:
+
+Facts: isHuman(Alice), isHuman(Bob)
+Rule: ∀x (isHuman(x) → hasHeart(x))
+Conclusion: hasHeart(Alice), hasHeart(Bob)
+Backward Chaining: A reasoning method that starts with a goal and tries to find a chain of rules that leads to that goal. This is a goal-driven approach.
+Example:
+
+Goal: hasHeart(Alice)
+Rule: ∀x (isHuman(x) → hasHeart(x))
+Subgoal: isHuman(Alice)
+Fact: isHuman(Alice)
+Resolution: A general-purpose inference method that relies on converting FOL statements into a standardized form (clauses) and then deriving new clauses by finding complementary literals.
+
