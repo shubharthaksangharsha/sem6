@@ -1,0 +1,14 @@
+best first search is a searching algorithm used to find shortest path 
+which used the distance as a heuristic  
+
+the distance between the starting node and the goal node is taken as the heuristic values 
+
+
+BFS algo 
+create two empty list open and closed 
+start from the (N) and put it into a open list  
+if open is empty then return failure  
+else generate all the successor of a node and put the newly generated node into a open list according to their 
+heuristic values. 
+
+reorder the nodes in the open list in ascending order according to their evaluation function 
